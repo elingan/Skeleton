@@ -1,0 +1,57 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+// Bootstrap Grid Variables
+$enable-grid-classes        : true !default;
+$enable-flex                : false !default;
+$grid-breakpoints           : $breakpoints !default;
+$container-max-widths: (
+    sm: 576px,
+    md: 720px,
+    lg: 940px,
+    xl: 1140px
+) !default;
+$grid-columns               : 12 !default;
+$grid-gutter-width          : 30px !default;
+
+// Colors
+$dark-grey                  : #333 !default;
+$light-grey                 : #e1e1e1 !default;
+$primary-color              : #33c3f0 !default;
+$secondary-color            : lighten($dark-grey, 13.5%) !default;
+
+$body-background            : #fff !default;
+$font-color                 : #222 !default;
+$link-color                 : #1eaedb !default;
+$link-color-hover           : darken($link-color, 5%);
+$border-color               : #d1d1d1 !default;
+
+// Typography
+$font-family                : "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Misc
+$global-radius              : 4px !default;
+
+// Navbar
+$navbar-background          : $body-background !default;
+$navbar-height              : 6.5rem !default;
+$navbar-border-color        : lighten($border-color, 8.8%) !default;
+$navbar-link-color          : $font-color !default;
+$navbar-link-color-hover    : $link-color-hover !default;
+$navbar-link-font-size      : 11px !default;
+$navbar-link-font-weight    : 600 !default;
+$navbar-body-padding-sm-up  : 6rem !default;
+
+// Cards
+$card-block-padding         : 15px 20px !default;
+$link-card-color            : $font-color !default;
+

@@ -1,0 +1,93 @@
+// Navbar
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.navbar {
+    display: block;
+    width: 100%;
+    height: $navbar-height;
+    background: $navbar-background;
+    z-index: 50;
+    border-bottom: 1px solid $navbar-border-color;
+    top: 0;
+    right: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.navbar-item {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.navbar-link {
+    display: block;
+    text-transform: uppercase;
+    font-size: $navbar-link-font-size;
+    font-weight: $navbar-link-font-weight;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    line-height: $navbar-height;
+    color: $navbar-link-color;
+
+    &.active,
+    &:hover {
+        color: $navbar-link-color-hover;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        position: relative;
+        height: auto;
+    }
+    .navbar-toggle {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 60;
+        display: block;
+    }
+    .navbar-list {
+        display: none;
+    }
+    .navbar.in .navbar-list {
+        display: block;
+        min-height: 100vh;
+    }
+    .navbar-item {
+        float: none;
+        display: inline;
+    }
+    .navbar-link {
+        text-align: left;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body.has-docked-navbar {
+        margin-top: $navbar-body-padding-sm-up;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-list {
+        display: block;
+    }
+    .navbar-item {
+        float: left;
+        display: list-item;
+    }
+    .navbar-link {
+        text-align: center;
+    }
+}
