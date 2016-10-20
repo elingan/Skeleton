@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.4",
+    "bootstrap": "^4.0.0-alpha.5",
     "autoprefixer": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
