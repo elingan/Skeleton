@@ -33,6 +33,7 @@ $grid-gutter-widths: (
 ) !default;
 
 // Colors
+$white: #fff !default;
 $dark-grey: #333 !default;
 $light-grey: #e1e1e1 !default;
 $primary-color: #33c3f0 !default;
@@ -41,7 +42,7 @@ $secondary-color: lighten($dark-grey, 13.5%) !default;
 $body-background: #fff !default;
 $font-color: #222 !default;
 $link-color: #1eaedb !default;
-$link-color-hover: darken($link-color, 5%);
+$link-color-hover: darken($link-color, 10%);
 $border-color: #d1d1d1 !default;
 
 // Typography
