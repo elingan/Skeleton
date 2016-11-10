@@ -16,7 +16,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
-    background-color: transparent;
+    background-color: $white;
     border-radius: $global-radius;
     border: 1px solid $border-color;
     cursor: pointer;
@@ -47,7 +47,7 @@ input {
         text-transform: uppercase;
         text-decoration: none;
         white-space: nowrap;
-        background-color: transparent;
+        background-color: $white;
         border-radius: $global-radius;
         border: 1px solid $border-color;
         cursor: pointer;
@@ -78,34 +78,36 @@ input {
 }
 
 
-// primary variation
-.button.button-primary,
-button.button-primary {
-    color: $white;
-    background-color: $primary-color;
-    border-color: darken($primary-color, 5%);
-
-    &:hover,
-    &:focus {
-        color: $white;
-        background-color: darken($primary-color, 5%);
-        border-color: darken($primary-color, 5%);
-    }
-}
-
-input {
-    &[type="submit"].button-primary,
-    &[type="reset"].button-primary,
-    &[type="button"].button-primary {
-        color: $white;
-        background-color: $primary-color;
-        border-color: darken($primary-color, 5%);
+// button variations
+@each $button, $colors in $buttons {
+    .button.button-#{$button},
+    button.button-#{$button} {
+        color: nth($colors, 2);
+        background-color: nth($colors, 1);
+        border-color: darken(nth($colors, 1), 5%);
 
         &:hover,
         &:focus {
-            color: $white;
-            background-color: darken($primary-color, 5%);
-            border-color: darken($primary-color, 5%);
+            color: nth($colors, 2);
+            background-color: darken(nth($colors, 1), 5%);
+            border-color: darken(nth($colors, 1), 5%);
+        }
+    }
+
+    input {
+        &[type="submit"].button-#{$button},
+        &[type="reset"].button-#{$button},
+        &[type="button"].button-#{$button} {
+            color: nth($colors, 2);
+            background-color: nth($colors, 1);
+            border-color: darken(nth($colors, 1), 5%);
+
+            &:hover,
+            &:focus {
+                color: nth($colors, 2);
+                background-color: darken(nth($colors, 1), 5%);
+                border-color: darken(nth($colors, 1), 5%);
+            }
         }
     }
 }
