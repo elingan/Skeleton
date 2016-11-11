@@ -38,7 +38,7 @@
 
     &.active,
     &:hover {
-        color: $navbar-link-color-hover;
+        color: darken($navbar-link-color, 5%);
     }
 }
 
