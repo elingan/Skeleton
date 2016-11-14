@@ -8,61 +8,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4.0rem;
+    font-size: $h1-font-size;
     line-height: 1.2;
     letter-spacing: -.1rem;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: $h2-font-size;
     line-height: 1.25;
     letter-spacing: -.1rem;
 }
 
 h3 {
-    font-size: 3.0rem;
+    font-size: $h3-font-size;
     line-height: 1.3;
     letter-spacing: -.1rem;
 }
 
 h4 {
-    font-size: 2.4rem;
+    font-size: $h4-font-size;
     line-height: 1.35;
     letter-spacing: -.08rem;
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-size: $h5-font-size;
     line-height: 1.5;
     letter-spacing: -.05rem;
 }
 
 h6 {
-    font-size: 1.5rem;
+    font-size: $h6-font-size;
     line-height: 1.6;
-    letter-spacing: 0;
+    letter-spacing: -.02rem;
 }
 
-// Larger than phablet
-@include media-breakpoint-up(sm) {
-    h1 {
-        font-size: 5.0rem;
-    }
-    h2 {
-        font-size: 4.2rem;
-    }
-    h3 {
-        font-size: 3.6rem;
-    }
-    h4 {
-        font-size: 3.0rem;
-    }
-    h5 {
-        font-size: 2.4rem;
-    }
-    h6 {
-        font-size: 1.5rem;
-    }
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: 65%;
+    line-height: 1;
+    color: #777;
 }
 
 p {
