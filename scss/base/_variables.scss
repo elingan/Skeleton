@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // The default font family.
-$font-family: "Railway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // The font sizes for h1-h6.
 $h1-font-size:        3.6rem !default;
@@ -64,16 +64,3 @@ $buttons: (
 
 // Misc
 $global-radius: 4px !default;
-
-// Navbar
-$navbar-background:             $body-background !default;
-$navbar-height:                 6.5rem !default;
-$navbar-border-color:           lighten($border-color, 8.8%) !default;
-$navbar-link-color:             $font-color !default;
-$navbar-link-font-size:         11px !default;
-$navbar-link-font-weight:       600 !default;
-$navbar-body-padding-sm-up:     6rem !default;
-
-// Cards
-$card-block-padding:            15px 20px !default;
-$link-card-color:               $font-color !default;
