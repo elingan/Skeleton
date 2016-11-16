@@ -37,15 +37,24 @@ textarea {
 }
 
 input {
-    &[type="email"]:focus,
-    &[type="number"]:focus,
-    &[type="search"]:focus,
-    &[type="text"]:focus,
-    &[type="tel"]:focus,
-    &[type="url"]:focus,
-    &[type="password"]:focus {
-        border: 1px solid $primary-color;
-        outline: 0;
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
+    &[type="text"],
+    &[type="tel"],
+    &[type="url"],
+    &[type="password"] {
+        height: 38px;
+        padding: 6px 10px;
+        background-color: $white;
+        border: 1px solid $border-color;
+        border-radius: $global-radius;
+        box-shadow: none;
+        box-sizing: border-box;
+        &:focus {
+            border: 1px solid $primary-color;
+            outline: 0;
+        }
     }
 }
 
@@ -74,12 +83,24 @@ input {
     }
 }
 
-label > .label-body {
+// Radio and checkboxes
+.checkbox-inline,
+.radio-inline {
+    margin-bottom: 15px;
+    label {
+        display: inline;
+    }
+}
+
+label .checkbox-label,
+label .radio-label {
     display: inline-block;
-    margin-left: .5rem;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
     font-weight: normal;
 }
 
+// Disabled
 *[disabled],
 .disabled {
     cursor: not-allowed;

@@ -9,7 +9,7 @@
     <link href='//fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="dist/css/skeleton.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script type="text/javascript" src="dist/js/skeleton.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body class="has-docked-navbar">
@@ -64,12 +64,29 @@
             </div>
             <label for="exampleMessage">Message</label>
             <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-            <label class="example-send-yourself-copy">
-                <input type="checkbox">
-                <span class="label-body">Send a copy to yourself</span>
+            <label class="checkbox">
+                <input type="checkbox"><span class="checkbox-label">Send a copy to yourself</span>
             </label>
             <input class="button-primary" type="submit" value="Submit">
         </form>
+
+        <h5>Inline radio's and checkboxes</h5>
+        <div class="checkbox-inline">
+            <label>
+                <input type="checkbox"><span class="checkbox-label">Checkbox 1</span>
+            </label>
+            <label>
+                <input type="checkbox"><span class="checkbox-label">Checkbox 2</span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="radio_0"><span class="radio-label">Radio 1</span>
+            </label>
+            <label>
+                <input type="radio" name="radio_0"><span class="radio-label">Radio 2</span>
+            </label>
+        </div>
     </div>
 
     <div class="docs-section" id="buttons">
