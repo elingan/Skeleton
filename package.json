@@ -4,13 +4,13 @@
   "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+    "url": "https://github.com/bigmassa/skeleton"
   },
   "bugs": {
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
+    "url": "https://github.com/bigmassa/skeleton/issues"
   },
   "homepage": "https://github.com/bigmassa/skeleton",
-  "author": "Seth Coelen <scoelen89@gmail.com>  (http://sethcoelen.com/)",
+  "author": "Stuart George <stuart.bigmassa@gmail.com>",
   "keywords": [
     "skeleton",
     "sass",
@@ -19,19 +19,22 @@
     "boilerplate"
   ],
   "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
-    "bootstrap": "^4.0.0-alpha.5",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.2.4",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
-    "gulp-sass": "^2.3.1",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.6",
-    "node-sass": "^3.7.0",
+    "node-sass": "^4.1.1",
     "run-sequence": "^1.2.1"
   }
 }

@@ -12,7 +12,7 @@
 @import "base/variables";
 
 /* mixins */
-@import "mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "mixins/clearfix";
 
 /* Base files */

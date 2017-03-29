@@ -2,20 +2,16 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 table {
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    display: table;
-}
-
-tr {
-    display: table-row;
 }
 
 th,
 td {
     padding: .85rem;
     text-align: left;
-    display: table-cell;
 }
 
 th[class*=col-],
@@ -23,6 +19,7 @@ td[class*=col-] {
     padding: .85rem;
     position: static;
     float: none;
+    width: auto;
 }
 
 td {

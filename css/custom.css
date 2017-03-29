@@ -70,3 +70,9 @@
     display: list-item; }
   .navbar-link {
     text-align: center; } }
+
+.example-grid div[class*=col-] {
+  background: #eeeeee;
+  padding: 5px;
+  border: 3px solid white;
+}
