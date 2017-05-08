@@ -10,7 +10,7 @@ input[type="button"] {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: $secondary-color;
+    color: $font-color;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -27,7 +27,7 @@ input[type="button"] {
 
     &:hover,
     &:focus {
-        color: $dark-grey;
+        color: $font-color;
         border-color: darken($border-color, 5%);
         outline: 0;
     }

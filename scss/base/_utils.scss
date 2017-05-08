@@ -2,61 +2,57 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // clearfix
-.u-clearfix {
+.clearfix {
     @include clearfix();
 }
 
 // width
-.u-full-width {
+.full-width {
     width: 100%;
     box-sizing: border-box;
 }
 
-.u-max-full-width {
+.max-full-width {
     max-width: 100%;
     box-sizing: border-box;
 }
 
 // floating
-.u-pull-left {
+.pull-left {
     float: left;
 }
 
-.u-pull-right {
+.pull-right {
     float: right;
 }
 
 // text align
-.u-text-left {
+.text-left {
     text-align: left;
 }
 
-.u-text-right {
+.text-right {
     text-align: right;
 }
 
-.u-text-center {
+.text-center {
     text-align: center;
 }
 
 // style
-.u-list-style-none {
+.list-style-none {
     list-style: none;
 }
 
-.u-upper {
-    text-transform: uppercase;
-}
-
 // display
-.u-hidden {
+.hidden {
     display: none;
 }
 
-.u-inline {
+.inline {
     display: inline;
 }
 
-.u-block {
+.block {
     display: block;
 }

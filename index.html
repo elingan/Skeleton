@@ -6,158 +6,37 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='//fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="dist/css/skeleton.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script type="text/javascript" src="js/custom.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
 </head>
-<body class="has-docked-navbar">
-
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar-toggle"><a href="javascript:void(0);" onclick="toggle_navbar()">&#9776;</a></div>
-        <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="#typography">Typography</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#forms">Forms</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#buttons">Buttons</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#tables">Tables</a></li>
-        </ul>
-    </div>
-</nav>
+<body>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-8" style="margin-top: 6rem; margin-bottom: 6rem;">
-            <h4>Skeleton</h4>
-            <p><a href="http://www.getskeleton.com">Original Skeleton documentation</a></p>
+            <h1>Skeleton</h1>
+            <p>The original skeleton documentation can be found <a href="http://www.getskeleton.com">here</a>.</p>
+            <ul>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#colours">Colours</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#utilities">Utilities</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="docs-section" id="typography">
-        <h4>Typography</h4>
-        <h1>h1. Header text <small>Small header</small></h1>
-        <h2>h2. Header text <small>Small header</small></h2>
-        <h3>h3. Header text <small>Small header</small></h3>
-        <h4>h4. Header text <small>Small header</small></h4>
-        <h5>h5. Header text <small>Small header</small></h5>
-        <h6>h6. Header text <small>Small header</small></h6>
-    </div>
-
-    <div class="docs-section" id="forms">
-        <h4>Forms</h4>
-        <form>
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="exampleEmailInput">Your email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com"
-                           id="exampleEmailInput">
-                </div>
-                <div class="col-md-6">
-                    <label for="exampleRecipientInput">Reason for contacting</label>
-                    <select class="u-full-width" id="exampleRecipientInput">
-                        <option value="Option 1">Questions</option>
-                        <option value="Option 2">Admiration</option>
-                        <option value="Option 3">Can I get your number?</option>
-                    </select>
-                </div>
-            </div>
-            <label for="exampleMessage">Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-            <label class="checkbox">
-                <input type="checkbox"><span class="checkbox-label">Send a copy to yourself</span>
-            </label>
-            <input class="button-primary" type="submit" value="Submit">
-        </form>
-
-        <h5>Inline radio's and checkboxes</h5>
-        <div class="checkbox-inline">
-            <label>
-                <input type="checkbox"><span class="checkbox-label">Checkbox 1</span>
-            </label>
-            <label>
-                <input type="checkbox"><span class="checkbox-label">Checkbox 2</span>
-            </label>
-        </div>
-        <div class="radio-inline">
-            <label>
-                <input type="radio" name="radio_0"><span class="radio-label">Radio 1</span>
-            </label>
-            <label>
-                <input type="radio" name="radio_0"><span class="radio-label">Radio 2</span>
-            </label>
-        </div>
-    </div>
-
-    <div class="docs-section" id="buttons">
-        <h4>Buttons</h4>
-        <div class="row">
-            <div class="col-md-12">
-                <a class="button" href="#">Anchor button</a>
-                <button>Button element</button>
-                <input type="submit" value="submit input">
-                <input type="button" value="button input">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a class="button button-primary" href="#">Anchor button</a>
-                <button class="button-primary">Button element</button>
-                <input class="button-primary" type="submit" value="submit input">
-                <input class="button-primary" type="button" value="button input">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a class="button button-secondary" href="#">Anchor button</a>
-                <button class="button-secondary">Button element</button>
-                <input class="button-secondary" type="submit" value="submit input">
-                <input class="button-secondary" type="button" value="button input">
-            </div>
-        </div>
-    </div>
-
-    <div class="docs-section" id="tables">
-        <h4>Tables</h4>
-        <table class="u-full-width">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th class="col-md-3">Column heading</th>
-                <th class="col-md-6">Column heading</th>
-                <th class="col-md-3">Column heading</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="4">Footer content</td>
-            </tr>
-            </tfoot>
-        </table>
-    </div>
-
-    <div class="docs-section" id="grid">
-        <h4>Grid</h4>
+    <div class="mb-10" id="grid">
+        <h3>Grid</h3>
+        <p>Bootstrap 4's grid system</p>
+        <p>This is enabled by default and can be disabled by setting 
+           <code>$enable-grid-classes: false;</code> in <code>scss/base/_variables.scss</code></p>
         <div class="container-fluid">
             <div class="row example-grid">
                 <div class="col-lg-1"><span>One</span></div>
@@ -205,6 +84,188 @@
             </div>
         </div>
     </div>
+
+    <div class="mb-10" id="typography">
+        <h3>Typography</h3>
+        <p>The base font is Lato which can be changed in <code>scss/base/_variables.scss</code>.</p>
+        <h1>Header <span class="heading-info"><code>&lt;h1&gt;</code></span></h1>
+        <h2>Header <span class="heading-info"><code>&lt;h2&gt;</code></span></h2>
+        <h3>Header <span class="heading-info"><code>&lt;h3&gt;</code></span></h3>
+        <h4>Header <span class="heading-info"><code>&lt;h4&gt;</code></span></h4>
+        <h5>Header <span class="heading-info"><code>&lt;h5&gt;</code></span></h5>
+        <h6>Header <span class="heading-info"><code>&lt;h6&gt;</code></span></h6>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p><strong>Bold Text</strong></p>
+        <p class="italic">Italic Text</p>
+        <p class="uppercase">Uppercased Text</p>
+        <p class="underline">Underline Text</p>
+    </div>
+
+    <div class="mb-10" id="lists">
+        <h3>Lists</h3>
+        <p>Unordered</p>
+        <ul>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ul>
+        <p>Ordered</p>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+    </div>
+
+    <div class="mb-10" id="colours">
+        <h3>Colours</h3>
+        <div class="row">
+            <div class="col-sm-4 col-md-3 mb-2">b-white<div class="color-block b-white"></div></div>
+            <div class="col-sm-4 col-md-3 mb-2">b-black<div class="color-block b-black"></div></div>
+            <div class="col-sm-4 col-md-3 mb-2">b-grey-dark<div class="color-block b-grey-dark"></div></div>
+            <div class="col-sm-4 col-md-3 mb-2">b-grey-light<div class="color-block b-grey-light"></div></div>
+            <div class="col-sm-4 col-md-3 mb-2">b-primary<div class="color-block b-primary"></div></div>
+            <div class="col-sm-4 col-md-3 mb-2">b-secondary<div class="color-block b-secondary"></div></div>
+        </div>
+    </div>
+
+    <div class="mb-10" id="forms">
+        <h3>Forms</h3>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Your email</label>
+                    <input class="full-width" type="email" placeholder="test@mailbox.com">
+                </div>
+                <div class="col-md-6">
+                    <label>Reason for contacting</label>
+                    <select class="full-width" id="exampleRecipientInput">
+                        <option value="Option 1">Questions</option>
+                        <option value="Option 2">Admiration</option>
+                        <option value="Option 3">Can I get your number?</option>
+                    </select>
+                </div>
+            </div>
+            <label>Message</label>
+            <textarea class="full-width" placeholder="Hi Dave …"></textarea>
+            <label class="checkbox">
+                <input type="checkbox"><span class="checkbox-label">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit">
+        </form>
+
+        <p>Inline radio's and checkboxes</p>
+        <div class="checkbox-inline">
+            <label>
+                <input type="checkbox"><span class="checkbox-label">Checkbox 1</span>
+            </label>
+            <label>
+                <input type="checkbox"><span class="checkbox-label">Checkbox 2</span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="radio_0"><span class="radio-label">Radio 1</span>
+            </label>
+            <label>
+                <input type="radio" name="radio_0"><span class="radio-label">Radio 2</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="mb-10" id="buttons">
+        <h3>Buttons</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="button" href="#">Anchor button</a>
+                <button>Button element</button>
+                <input type="submit" value="submit input">
+                <input type="button" value="button input">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="button button-primary" href="#">Anchor button</a>
+                <button class="button-primary">Button element</button>
+                <input class="button-primary" type="submit" value="submit input">
+                <input class="button-primary" type="button" value="button input">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="button button-secondary" href="#">Anchor button</a>
+                <button class="button-secondary">Button element</button>
+                <input class="button-secondary" type="submit" value="submit input">
+                <input class="button-secondary" type="button" value="button input">
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-10" id="code">
+        <h3>Code</h3>
+        <pre><code>var i = 0;</code></pre>
+        <p>Some inline <code>code()</code> block.</p>
+    </div>
+
+    <div class="mb-10" id="tables">
+        <h3>Tables</h3>
+        <table class="u-full-width">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th class="col-md-3">Column heading</th>
+                <th class="col-md-6">Column heading</th>
+                <th class="col-md-3">Column heading</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4">Footer content</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="mb-10" id="utilities">
+        <h3>Utilities</h3>
+        <code>.clearfix {...}</code><br>
+        <code>.full-width {...}</code><br>
+        <code>.max-full-width {...}</code><br>
+        <code>.pull-left {...}</code><br>
+        <code>.pull-right {...}</code><br>
+        <code>.text-left {...}</code><br>
+        <code>.text-center {...}</code><br>
+        <code>.text-right {...}</code><br>
+        <code>.list-style-none {...}</code><br>
+        <code>.hidden {...}</code><br>
+        <code>.inline {...}</code><br>
+        <code>.block {...}</code>
+        <p class="mt-2">Typography specific</p>
+        <code>.italic {...}</code><br>
+        <code>.uppercase {...}</code><br>
+        <code>.underline {...}</code><br>
+    </div>
+
 </div>
 
 </body>
