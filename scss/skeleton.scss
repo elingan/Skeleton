@@ -11,12 +11,14 @@
 
 @import "base/variables";
 
+/* normalize */
+@import "../node_modules/normalize.css/normalize";
+
 /* mixins */
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "mixins/clearfix";
 
 /* Base files */
-@import "base/normalize";
 @import "base/reboot";
 @import "base/base_styles";
 @import "base/utils";
