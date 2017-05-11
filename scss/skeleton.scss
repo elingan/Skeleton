@@ -8,7 +8,10 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
+/* functions */
+@import "scss/functions";
 
+/* variables */
 @import "base/variables";
 
 /* normalize */
@@ -16,7 +19,7 @@
 
 /* mixins */
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
-@import "mixins/clearfix";
+@import "scss/mixins";
 
 /* Base files */
 @import "base/reboot";

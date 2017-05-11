@@ -1,21 +1,8 @@
 // Colours
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.b-white {
-    background: $white;
-}
-.b-black {
-    background: $black;
-}
-.b-grey-dark {
-    background: $grey-dark;
-}
-.b-grey-light {
-    background: $grey-light;
-}
-.b-primary {
-    background: $primary-color;
-}
-.b-secondary {
-    background: $secondary-color;
+@each $name, $color in $colors {
+    .b-#{$name} {
+        background: $color;
+    }
 }
