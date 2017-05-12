@@ -1,11 +1,15 @@
 /*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+* Skeleton v2.1.0
+* Rebuilt for SCSS
+*
+* Original: 
+*       Skeleton V2.0.4
+*       Copyright 2014, Dave Gamache
+*       www.getskeleton.com
+*       Free to use under the MIT license.
+*       http://www.opensource.org/licenses/mit-license.php
+*       12/9/2014
+*       Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
 /* functions */
@@ -15,10 +19,10 @@
 @import "base/variables";
 
 /* normalize */
-@import "../node_modules/normalize.css/normalize";
+@import "normalize";
 
 /* mixins */
-@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "mixins/breakpoints";
 @import "scss/mixins";
 
 /* Base files */
@@ -28,9 +32,9 @@
 @import "base/typography";
 
 /* Bootstrap grid */
-@import "../node_modules/bootstrap/scss/mixins/grid";
-@import "../node_modules/bootstrap/scss/mixins/grid-framework";
-@import "../node_modules/bootstrap/scss/grid";
+@import "mixins/grid";
+@import "mixins/grid-framework";
+@import "grid";
 
 /* Modules */
 @import "modules/buttons";

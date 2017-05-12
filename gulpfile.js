@@ -4,6 +4,7 @@ var prefixer = require('autoprefixer');
 var runSequence = require('run-sequence');
 
 var config = {
+    nodeDir: './node_modules',
     publicDir: './dist',
     scssDir: './scss'
 };
@@ -11,7 +12,12 @@ var config = {
 gulp.task('scss', function() {
     return gulp.src(config.scssDir + '/skeleton.scss')
     .pipe($.sourcemaps.init())
-    .pipe($.sass({}))
+    .pipe($.sass({
+        "includePaths": [
+          config.nodeDir + "/normalize.css",
+          config.nodeDir + "/bootstrap/scss"
+        ]
+    }))
     .pipe($.postcss([prefixer({browsers: ['last 1 version']})]))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest(config.publicDir + '/css'));
