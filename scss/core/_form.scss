@@ -1,4 +1,4 @@
-// Forms
+// Form
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 textarea,
@@ -22,12 +22,16 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
-        @include appearance(none);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 }
 
 textarea {
-    @include appearance(none);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     min-height: 65px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -96,10 +100,4 @@ label .radio-label {
     margin-left: 1rem;
     margin-right: 1.5rem;
     font-weight: normal;
-}
-
-// Disabled
-*[disabled],
-.disabled {
-    cursor: not-allowed;
 }

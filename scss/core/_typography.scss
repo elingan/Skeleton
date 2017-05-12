@@ -56,19 +56,3 @@ h6 small {
 p {
     margin-top: 0;
 }
-
-.italic {
-    font-style: italic;
-}
-
-.muted {
-    color: lighten($font-color, 40%);
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.underline {
-    text-decoration: underline;
-}

@@ -1,5 +1,5 @@
 /*
-* Skeleton v2.1.0
+* Skeleton v2.2.0
 * Rebuilt for SCSS
 *
 * Original: 
@@ -12,36 +12,5 @@
 *       Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-/* functions */
-@import "scss/functions";
-
-/* variables */
-@import "base/variables";
-
-/* normalize */
-@import "normalize";
-
-/* mixins */
-@import "mixins/breakpoints";
-@import "scss/mixins";
-
-/* Base files */
-@import "base/reboot";
-@import "base/base_styles";
-@import "base/utils";
-@import "base/typography";
-
-/* Bootstrap grid */
-@import "mixins/grid";
-@import "mixins/grid-framework";
-@import "grid";
-
-/* Modules */
-@import "modules/buttons";
-@import "modules/colours";
-@import "modules/forms";
-@import "modules/lists";
-@import "modules/code";
-@import "modules/tables";
-@import "modules/spacing";
-@import "modules/visibility";
+@import "variables";
+@import "import";

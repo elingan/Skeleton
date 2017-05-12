@@ -1,12 +1,12 @@
-// Utilities
+// Helpers
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// clearfix
+/* clearfix */
 .clearfix {
     @include clearfix();
 }
 
-// width
+/* width */
 .full-width {
     width: 100%;
     box-sizing: border-box;
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-// floating
+/* floating */
 .pull-left {
     float: left;
 }
@@ -26,7 +26,7 @@
     float: right;
 }
 
-// text align
+/* text align */
 .text-left {
     text-align: left;
 }
@@ -39,12 +39,29 @@
     text-align: center;
 }
 
-// style
+/* list */
 .list-style-none {
     list-style: none;
 }
 
-// display
+/* typography */
+.italic {
+    font-style: italic;
+}
+
+.muted {
+    color: lighten($font-color, 40%);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* display */
 .hidden {
     display: none;
 }

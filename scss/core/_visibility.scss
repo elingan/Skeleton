@@ -1,4 +1,4 @@
-// Responsive visibility utilities
+// Visibility
 
 @each $bp in map-keys($grid-breakpoints) {
     .hidden-#{$bp}-up {

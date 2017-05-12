@@ -4,9 +4,9 @@ var prefixer = require('autoprefixer');
 var runSequence = require('run-sequence');
 
 var config = {
-    nodeDir: './node_modules',
-    publicDir: './dist',
-    scssDir: './scss'
+    nodeDir: 'node_modules',
+    publicDir: 'dist',
+    scssDir: 'scss'
 };
 
 gulp.task('scss', function() {
@@ -14,8 +14,7 @@ gulp.task('scss', function() {
     .pipe($.sourcemaps.init())
     .pipe($.sass({
         "includePaths": [
-          config.nodeDir + "/normalize.css",
-          config.nodeDir + "/bootstrap/scss"
+            config.nodeDir
         ]
     }))
     .pipe($.postcss([prefixer({browsers: ['last 1 version']})]))
