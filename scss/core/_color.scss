@@ -5,4 +5,7 @@
     .b-#{$name} {
         background: $color;
     }
+    .c-#{$name} {
+        color: $color;
+    }
 }
