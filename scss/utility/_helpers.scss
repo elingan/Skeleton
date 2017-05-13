@@ -3,7 +3,7 @@
 
 /* clearfix */
 .clearfix {
-    @include clearfix();
+    @include clearfix;
 }
 
 /* width */
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-/* floating */
+/* alignment */
 .pull-left {
     float: left;
 }
@@ -26,7 +26,10 @@
     float: right;
 }
 
-/* text align */
+.push-auto {
+    @include push--auto;
+}
+
 .text-left {
     text-align: left;
 }
