@@ -60,6 +60,7 @@ $colors: (
         secondary:        rgb(141, 141, 141)
 ) !default;
 
+$body-background:         map-get($colors, white);
 $font-color:            rgb(34, 34, 34);
 $link-color:              map-get($colors, primary);
 $border-color:          rgb(230, 230, 230);
