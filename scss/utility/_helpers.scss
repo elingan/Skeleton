@@ -55,6 +55,10 @@
 .muted {
     color: lighten($font-color, 40%);
 }
+ 
+.nowrap { 
+    white-space: nowrap; 
+}
 
 .uppercase {
     text-transform: uppercase;
