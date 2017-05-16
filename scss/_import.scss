@@ -4,11 +4,16 @@
 /* utilities */
 @import "normalize.css/normalize";
 
-/* system wide mixins, functions and helpers */
+/* system wide mixins & functions */
+@import "bootstrap/scss/mixins/breakpoints";
 @import "utility/functions";
 @import "utility/mixins";
+
+/* main helpers */
+@import "utility/color";
 @import "utility/helpers";
-@import "bootstrap/scss/mixins/breakpoints";
+@import "utility/spacing";
+@import "utility/visibility";
 
 /* core styling */
 @import "core";
@@ -22,7 +27,6 @@
 @import "core/anchor";
 @import "core/button";
 @import "core/code";
-@import "core/color";
 @import "core/cursor";
 @import "core/form";
 @import "core/hr";
@@ -30,7 +34,6 @@
 @import "core/spacing";
 @import "core/table";
 @import "core/typography";
-@import "core/visibility";
 
 /* site module */
 @import "module/layout";
