@@ -6,7 +6,11 @@
     @include clearfix;
 }
 
-/* width */
+/* width and height */
+.full-visual-height {
+    height: 100vh;
+}
+
 .full-width {
     width: 100%;
     box-sizing: border-box;
