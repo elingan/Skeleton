@@ -1,15 +1,22 @@
-.heading-info {
-    font-size: 1.2rem;
-    color: #999;
-    letter-spacing: normal;
+.panel:nth-child(odd) {
+    background: #E6E5E6;
 }
 
 .color-block {
     height: 80px;
 }
 
-.example-grid div[class*=col-] {
+.example-grid div[class*=col-] div {
   background: #fafafa;
   padding: 5px;
-  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+
+.center-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.center-inner {
+    align-self: center;
 }

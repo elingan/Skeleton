@@ -13,117 +13,119 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8" style="margin-top: 6rem; margin-bottom: 6rem;">
-            <h1>Skeleton</h1>
-            <p>The original skeleton documentation can be found <a href="http://www.getskeleton.com">here</a>.</p>
+<!-- intro -->
+<div class="panel container-fluid full-visual-height center-outer">
+    <div class="center-inner text-center">
+        <h1 class="c-primary">Skeleton</h1>
+        <h2>A dead simple, responsive boilerplate.</h2>
+    </div>
+</div>
+
+<!-- grid -->
+<div class="panel container-fluid py-10">
+    <h2 class="text-center">Bootstrap 4 Grid</h2>
+    <p class="text-center">This is enabled by default and can be disabled within <code>scss/_variables.scss</code></p>
+    <div class="container">
+        <div class="row example-grid">
+            <div class="col-lg-1"><div>One</div></div>
+            <div class="col-lg-11"><div>Eleven</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-2"><div>Two</div></div>
+            <div class="col-lg-10"><div>Ten</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-3"><div>Three</div></div>
+            <div class="col-lg-9"><div>Nine</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-4"><div>Four</div></div>
+            <div class="col-lg-8"><div>Eight</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-5"><div>Five</div></div>
+            <div class="col-lg-7"><div>Seven</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-6"><div>Six</div></div>
+            <div class="col-lg-6"><div>Six</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-7"><div>Seven</div></div>
+            <div class="col-lg-5"><div>Five</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-8"><div>Eight</div></div>
+            <div class="col-lg-4"><div>Four</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-9"><div>Eight</div></div>
+            <div class="col-lg-3"><div>Three</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-10"><div>Ten</div></div>
+            <div class="col-lg-2"><div>Two</div></div>
+        </div>
+        <div class="row example-grid">
+            <div class="col-lg-11"><div>Eleven</div></div>
+            <div class="col-lg-1"><div>One</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- typography -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Typography</h2>
+        <p class="text-center">The base font family can be changed in <code>scss/_variables.scss</code>.</p>
+        <div class="col-md-8 push-md-2">
+            <h1>Header <span class="heading-info"><code>&lt;h1&gt;</code></span></h1>
+            <h2>Header <span class="heading-info"><code>&lt;h2&gt;</code></span></h2>
+            <h3>Header <span class="heading-info"><code>&lt;h3&gt;</code></span></h3>
+            <h4>Header <span class="heading-info"><code>&lt;h4&gt;</code></span></h4>
+            <h5>Header <span class="heading-info"><code>&lt;h5&gt;</code></span></h5>
+            <h6>Header <span class="heading-info"><code>&lt;h6&gt;</code></span></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec orci erat. Etiam neque neque, suscipit eget fringilla ac, cursus vel ligula.</p>
+            <p><strong>Bold Text</strong></p>
+            <p class="italic">Italic Text</p>
+            <p class="muted">Muted Text</p>
+            <p class="uppercase">Uppercased Text</p>
+            <p class="underline">Underline Text</p>
+        </div>
+    </div>
+</div>
+
+<!-- lists -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Lists</h2>
+        <p class="text-center">The base font family can be changed in <code>scss/_variables.scss</code>.</p>
+        <div class="col-md-8 push-md-2">
+            <p>Unordered</p>
             <ul>
-                <li><a href="#grid">Grid</a></li>
-                <li><a href="#typography">Typography</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#colours">Colours</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#code">Code</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#helpers">Helpers</a></li>
-                <li><a href="#mixins">Mixins</a></li>
-                <li><a href="#functions">Functions</a></li>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
             </ul>
+            <p>Ordered</p>
+            <ol>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ol>
         </div>
     </div>
+</div>
 
-    <div class="mb-10" id="grid">
-        <h3>Grid</h3>
-        <p>Bootstrap 4's grid system</p>
-        <p>This is enabled by default and can be disabled by setting 
-           <code>$enable-grid-classes: false;</code> in <code>scss/_variables.scss</code></p>
-        <div class="container-fluid">
-            <div class="row example-grid">
-                <div class="col-lg-1"><span>One</span></div>
-                <div class="col-lg-11"><span>Eleven</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-2"><span>Two</span></div>
-                <div class="col-lg-10"><span>Ten</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-3"><span>Three</span></div>
-                <div class="col-lg-9"><span>Nine</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-4"><span>Four</span></div>
-                <div class="col-lg-8"><span>Eight</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-5"><span>Five</span></div>
-                <div class="col-lg-7"><span>Seven</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-6"><span>Six</span></div>
-                <div class="col-lg-6"><span>Six</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-7"><span>Seven</span></div>
-                <div class="col-lg-5"><span>Five</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-8"><span>Eight</span></div>
-                <div class="col-lg-4"><span>Four</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-9"><span>Eight</span></div>
-                <div class="col-lg-3"><span>Three</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-10"><span>Ten</span></div>
-                <div class="col-lg-2"><span>Two</span></div>
-            </div>
-            <div class="row example-grid">
-                <div class="col-lg-11"><span>Eleven</span></div>
-                <div class="col-lg-1"><span>One</span></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-10" id="typography">
-        <h3>Typography</h3>
-        <p>The base font family can be changed in <code>scss/_variables.scss</code>.</p>
-        <h1>Header <span class="heading-info"><code>&lt;h1&gt;</code></span></h1>
-        <h2>Header <span class="heading-info"><code>&lt;h2&gt;</code></span></h2>
-        <h3>Header <span class="heading-info"><code>&lt;h3&gt;</code></span></h3>
-        <h4>Header <span class="heading-info"><code>&lt;h4&gt;</code></span></h4>
-        <h5>Header <span class="heading-info"><code>&lt;h5&gt;</code></span></h5>
-        <h6>Header <span class="heading-info"><code>&lt;h6&gt;</code></span></h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec orci erat. Etiam neque neque, suscipit eget fringilla ac, cursus vel ligula. Phasellus accumsan mauris diam, posuere dapibus metus molestie eget. Curabitur interdum sapien a purus rhoncus molestie. Maecenas a lacinia ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed gravida aliquam cursus. Mauris placerat, nibh nec vestibulum porta, nisi orci rutrum nisl, non molestie ipsum nulla sit amet dui. Sed iaculis eget ligula in accumsan. In lorem arcu, blandit nec augue sed, pulvinar varius nisi. Integer faucibus luctus sapien, in lacinia sem volutpat nec. Suspendisse mattis, lectus id ultricies gravida, justo nisi scelerisque lorem, id interdum lectus eros quis urna.</p>
-        <p><strong>Bold Text</strong></p>
-        <p class="italic">Italic Text</p>
-        <p class="muted">Muted Text</p>
-        <p class="uppercase">Uppercased Text</p>
-        <p class="underline">Underline Text</p>
-    </div>
-
-    <div class="mb-10" id="lists">
-        <h3>Lists</h3>
-        <p>Unordered</p>
-        <ul>
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ul>
-        <p>Ordered</p>
-        <ol>
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ol>
-    </div>
-
-    <div class="mb-10" id="colours">
-        <h3>Colours</h3>
-        <p>Defining additional colors in <code>scss/_variables.scss</code> will generate further <code>.b-{color} {...}</code> classes.</p>
-        <p>All colors also have a class to set the <code>color</code> css property like <code>.c-{color} {...}</code>.</p>
+<!-- colours -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Colors</h2>
+        <p class="text-center">Define additional colors in <code>scss/_variables.scss</code></p>
+        <p class="text-center">
+            All defined colors will create a background and color style<br/>
+            <code>b-{color} {...}</code> and <code>c-{color} {...}</code>
+        </p>
         <div class="row">
             <div class="col-sm-4 col-md-3 mb-2">b-white<div class="color-block b-white"></div></div>
             <div class="col-sm-4 col-md-3 mb-2">b-black<div class="color-block b-black"></div></div>
@@ -132,9 +134,12 @@
             <div class="col-sm-4 col-md-3 mb-2">b-secondary<div class="color-block b-secondary"></div></div>
         </div>
     </div>
+</div>
 
-    <div class="mb-10" id="forms">
-        <h3>Forms</h3>
+<!-- forms -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Forms</h2>
         <form>
             <div class="row">
                 <div class="col-md-6">
@@ -204,12 +209,15 @@
             </label>
         </div>
     </div>
+</div>
 
-    <div class="mb-10" id="buttons">
-        <h3>Buttons</h3>
-        <p>Defining additional buttons in <code>scss/_variables.scss</code> will generate further <code>.button-{name} {...}</code> classes.</p>
+<!-- buttons -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Buttons</h2>
+        <p class="text-center">Defining additional buttons can be defined in <code>scss/_variables.scss</code></p>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <a class="button" href="#">Anchor button</a>
                 <button>Button element</button>
                 <input type="submit" value="submit input">
@@ -217,7 +225,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <a class="button button-primary" href="#">Anchor button</a>
                 <button class="button-primary">Button element</button>
                 <input class="button-primary" type="submit" value="submit input">
@@ -225,7 +233,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <a class="button button-secondary" href="#">Anchor button</a>
                 <button class="button-secondary">Button element</button>
                 <input class="button-secondary" type="submit" value="submit input">
@@ -233,15 +241,13 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="mb-10" id="code">
-        <h3>Code</h3>
-        <pre><code>var i = 0;</code></pre>
-        <p>Some inline <code>code()</code> block.</p>
-    </div>
-
-    <div class="mb-10" id="tables">
-        <h3>Tables</h3>
+<!-- tables -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Tables</h2>
+        <p class="text-center">Defining additional buttons can be defined in <code>scss/_variables.scss</code></p>
         <table class="u-full-width">
             <thead>
             <tr>
@@ -278,10 +284,23 @@
             </tfoot>
         </table>
     </div>
+</div>
 
-    <div class="mb-10" id="helpers">
-        <h3>Helpers</h3>
+<!-- code -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Code</h2>
+        <pre><code>var i = 0;</code></pre>
+        <p>Some inline <code>code()</code> block.</p>
+    </div>
+</div>
+
+<!-- helpers -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Helpers</h2>
         <code>.clearfix {...}</code><br>
+        <code>.full-visual-height {...}</code><br>
         <code>.full-width {...}</code><br>
         <code>.max-full-width {...}</code><br>
         <code>.pull-left {...}</code><br>
@@ -302,9 +321,12 @@
         <code>.block {...}</code><br>
         <code>.scroll-x {...}</code>
     </div>
+</div>
 
-    <div class="mb-10" id="mixins">
-        <h3>Mixins</h3>
+<!-- mixins -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Mixins</h2>
         <code>@import box-shadow($top, $left, $blur, $color, $inset: false);</code><br>
         <code>@import clearfix;</code><br>
         <code>@import css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false);</code><br>
@@ -313,12 +335,14 @@
         <code>@import responsive-ratio($x, $y, $pseudo: false);</code><br>
         <code>@import truncate($truncation-boundary);</code><br>
     </div>
+</div>
 
-    <div class="mb-10" id="functions">
-        <h3>Functions</h3>
+<!-- functions -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Functions</h2>
         <code>color($name);</code><br>
     </div>
-
 </div>
 
 </body>
