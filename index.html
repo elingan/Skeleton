@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="dist/css/skeleton.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="icon" type="image/png" href="images/favicon.png"/>
@@ -16,8 +16,8 @@
 <!-- intro -->
 <div class="panel container-fluid full-visual-height center-outer">
     <div class="center-inner text-center">
-        <h1 class="c-primary">Skeleton</h1>
-        <h2>A dead simple, responsive boilerplate.</h2>
+        <h1 class="c-white">Skeleton</h1>
+        <h2>A dead simple, responsive SCSS boilerplate.</h2>
     </div>
 </div>
 
@@ -78,7 +78,7 @@
     <div class="container">
         <h2 class="text-center">Typography</h2>
         <p class="text-center">The base font family can be changed in <code>scss/_variables.scss</code>.</p>
-        <div class="col-md-8 push-md-2">
+        <div class="col-md-8 offset-md-2">
             <h1>Header <span class="heading-info"><code>&lt;h1&gt;</code></span></h1>
             <h2>Header <span class="heading-info"><code>&lt;h2&gt;</code></span></h2>
             <h3>Header <span class="heading-info"><code>&lt;h3&gt;</code></span></h3>
@@ -100,7 +100,7 @@
     <div class="container">
         <h2 class="text-center">Lists</h2>
         <p class="text-center">The base font family can be changed in <code>scss/_variables.scss</code>.</p>
-        <div class="col-md-8 push-md-2">
+        <div class="col-md-8 offset-md-2">
             <p>Unordered</p>
             <ul>
                 <li>First Item</li>
@@ -123,8 +123,7 @@
         <h2 class="text-center">Colors</h2>
         <p class="text-center">Define additional colors in <code>scss/_variables.scss</code></p>
         <p class="text-center">
-            All defined colors will create a background and color style<br/>
-            <code>b-{color} {...}</code> and <code>c-{color} {...}</code>
+            All defined colors will create a background and color style <code>b-{color} {...}</code> and <code>c-{color} {...}</code>
         </p>
         <div class="row">
             <div class="col-sm-4 col-md-3 mb-2">b-white<div class="color-block b-white"></div></div>
@@ -248,38 +247,46 @@
     <div class="container">
         <h2 class="text-center">Tables</h2>
         <p class="text-center">Defining additional buttons can be defined in <code>scss/_variables.scss</code></p>
-        <table class="u-full-width">
+        <table>
             <thead>
             <tr>
-                <th>#</th>
-                <th class="col-md-3">Column heading</th>
-                <th class="col-md-6">Column heading</th>
-                <th class="col-md-3">Column heading</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Created by</th>
+                <th class="text-right">Created at</th>
+                <th class="text-right">Cost</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>1</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
+                <td><a href="#">Some Thing</a></td>
+                <td>Foo</td>
+                <td>by Bilbo Baggins</td>
+                <td class="text-right">23 minutes ago</td>
+                <td class="text-right">£100.00</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
+                <td><a href="#">Another Thing</a></td>
+                <td>Bar</td>
+                <td>by Frodo Baggins</td>
+                <td class="text-right">1 hour ago</td>
+                <td class="text-right">£99.00</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
+                <td><a href="#">Summit Else</a></td>
+                <td>Wiz</td>
+                <td>by Gandalf</td>
+                <td class="text-right">01/01/2017 08:23 AM</td>
+                <td class="text-right">£50.00</td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="4">Footer content</td>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td class="text-right"></td>
+                <td class="text-right">£249.00</td>
             </tr>
             </tfoot>
         </table>
@@ -290,8 +297,10 @@
 <div class="panel container-fluid py-10">
     <div class="container">
         <h2 class="text-center">Code</h2>
-        <pre><code>var i = 0;</code></pre>
-        <p>Some inline <code>code()</code> block.</p>
+        <div class="col-md-8 offset-md-2">
+            <pre><code>var i = 0;</code></pre>
+            <p>Some inline <code>code()</code> block.</p>
+        </div>
     </div>
 </div>
 
@@ -299,27 +308,56 @@
 <div class="panel container-fluid py-10">
     <div class="container">
         <h2 class="text-center">Helpers</h2>
-        <code>.clearfix {...}</code><br>
-        <code>.full-visual-height {...}</code><br>
-        <code>.full-width {...}</code><br>
-        <code>.max-full-width {...}</code><br>
-        <code>.pull-left {...}</code><br>
-        <code>.pull-right {...}</code><br>
-        <code>.push-auto {...}</code><br>
-        <code>.text-left {...}</code><br>
-        <code>.text-center {...}</code><br>
-        <code>.text-right {...}</code><br>
-        <code>.list-style-none {...}</code><br>
-        <code>.italic {...}</code><br>
-        <code>.muted {...}</code><br>
-        <code>.nowrap {...}</code><br>
-        <code>.uppercase {...}</code><br>
-        <code>.underline {...}</code><br>
-        <code>.hidden {...}</code><br>
-        <code>.inline {...}</code><br>
-        <code>.inline-block {...}</code><br>
-        <code>.block {...}</code><br>
-        <code>.scroll-x {...}</code>
+        <div class="col-md-8 offset-md-2">
+            <code>.clearfix {...}</code><br>
+            <code>.full-visual-height {...}</code><br>
+            <code>.full-width {...}</code><br>
+            <code>.max-full-width {...}</code><br>
+            <code>.pull-left {...}</code><br>
+            <code>.pull-right {...}</code><br>
+            <code>.push-auto {...}</code><br>
+            <code>.text-left {...}</code><br>
+            <code>.text-center {...}</code><br>
+            <code>.text-right {...}</code><br>
+            <code>.list-style-none {...}</code><br>
+            <code>.italic {...}</code><br>
+            <code>.muted {...}</code><br>
+            <code>.nowrap {...}</code><br>
+            <code>.uppercase {...}</code><br>
+            <code>.underline {...}</code><br>
+            <code>.hidden {...}</code><br>
+            <code>.inline {...}</code><br>
+            <code>.inline-block {...}</code><br>
+            <code>.block {...}</code><br>
+            <code>.scroll-x {...}</code>
+        </div>    
+    </div>
+</div>
+
+<!-- spacing -->
+<div class="panel container-fluid py-10">
+    <div class="container">
+        <h2 class="text-center">Padding and Margin</h2>
+        <p class="text-center">Padding and margins are defined in <code>scss/_variables.scss</code>.<br/>
+        Padding is prefixed with <code>p</code> and margin <code>m</code></p>
+        <div class="col-md-8 offset-md-2">
+            <p>Example padding classes at 1rem:</p>
+            <code>.p-1 {...}</code><br>
+            <code>.px-1 {...}</code><br>
+            <code>.py-1 {...}</code><br>
+            <code>.pt-1 {...}</code><br>
+            <code>.pr-1 {...}</code><br>
+            <code>.pb-1 {...}</code><br>
+            <code>.pl-1 {...}</code><br>
+            <p class="mt-2h">Example margin classes at 1.5rem:</p>
+            <code>.m-1h {...}</code><br>
+            <code>.mx-1h {...}</code><br>
+            <code>.my-1h {...}</code><br>
+            <code>.mt-1h {...}</code><br>
+            <code>.mr-1h {...}</code><br>
+            <code>.mb-1h {...}</code><br>
+            <code>.ml-1h {...}</code><br>
+        </div>    
     </div>
 </div>
 
@@ -327,13 +365,15 @@
 <div class="panel container-fluid py-10">
     <div class="container">
         <h2 class="text-center">Mixins</h2>
-        <code>@import box-shadow($top, $left, $blur, $color, $inset: false);</code><br>
-        <code>@import clearfix;</code><br>
-        <code>@import css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false);</code><br>
-        <code>@import pseudo($display: block, $pos: absolute, $content: '');</code><br>
-        <code>@import push--auto;</code><br>
-        <code>@import responsive-ratio($x, $y, $pseudo: false);</code><br>
-        <code>@import truncate($truncation-boundary);</code><br>
+        <div class="col-md-8 offset-md-2">
+            <code>@import box-shadow($top, $left, $blur, $color, $inset: false);</code><br>
+            <code>@import clearfix;</code><br>
+            <code>@import css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false);</code><br>
+            <code>@import pseudo($display: block, $pos: absolute, $content: '');</code><br>
+            <code>@import push--auto;</code><br>
+            <code>@import responsive-ratio($x, $y, $pseudo: false);</code><br>
+            <code>@import truncate($truncation-boundary);</code><br>
+        </div>
     </div>
 </div>
 
@@ -341,7 +381,9 @@
 <div class="panel container-fluid py-10">
     <div class="container">
         <h2 class="text-center">Functions</h2>
-        <code>color($name);</code><br>
+        <div class="col-md-8 offset-md-2">
+            <code>color($name);</code><br>
+        </div>
     </div>
 </div>
 

@@ -10,16 +10,8 @@ table {
 
 th,
 td {
-    padding: .85rem;
+    padding: $table-cell-padding;
     text-align: left;
-}
-
-th[class*=col-],
-td[class*=col-] {
-    padding: .85rem;
-    position: static;
-    float: none;
-    width: auto;
 }
 
 td {

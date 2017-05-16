@@ -3,7 +3,9 @@
 
 // The default font family.
 // $font-family: "Roboto", sans-serif !default;
-$font-family: "Raleway", sans-serif !default;
+$font-family: "Open Sans", sans-serif !default;
+
+
 
 // The font sizes for h1-h6.
 $h1-font-size:        3.6rem !default; 
@@ -13,6 +15,8 @@ $h4-font-size:        1.8rem !default;
 $h5-font-size:        1.4rem !default; 
 $h6-font-size:        1.2rem !default; 
 
+
+
 // Breakpoints
 $breakpoints: (
         xs: 0,
@@ -21,6 +25,8 @@ $breakpoints: (
         lg: 992px,
         xl: 1200px
 ) !default;
+
+
 
 // Bootstrap Grid Variables
 $enable-grid-classes: true !default;
@@ -50,6 +56,8 @@ $grid-gutter-widths: (
         xl: $grid-gutter-width-base
 ) !default;
 
+
+
 // Colors
 // all colors creates the following helpers for background and color:
 // ie: .b-white and .c-white 
@@ -61,12 +69,16 @@ $colors: (
         alabaster:        rgb(250, 250, 250),
 ) !default;
 
+
+
 // defined colors used in core
 $body-background:         map-get($colors, white);
-$font-color:            rgb(34, 34, 34);
+$font-color:              rgb(51, 51, 51);
 $link-color:              map-get($colors, primary);
-$border-color:          rgb(230, 230, 230);
+$border-color:            rgb(230, 230, 230);
 $input-background:        map-get($colors, white);
+
+
 
 // buttons name: (background colour) (font colour)
 // button classes created: .button-primary, .button-secondary
@@ -75,10 +87,15 @@ $buttons: (
         secondary:      map-get($colors, secondary)    map-get($colors, white)
 ) !default;
 
+
+
 // Misc
 $global-radius: 4px !default;
+$table-cell-padding: .85rem .85rem !default;
 
-// spacers (padding & margin)
+
+
+// padding & margins
 // examples at 1rem:
 // padding: .p-1, px-1, py-1 .pl-1, .pt-1, .pr-1, .pb-1
 // margin: .m-1, mx-1, my-1 .ml-1, .mt-1, .mr-1, .mb-1
