@@ -1,3 +1,7 @@
+.heading-info {
+    font-size: 1.3rem;
+}
+
 .panel:nth-child(odd) {
     background: #E6E5E6;
 }
