@@ -3,8 +3,8 @@
 
 textarea,
 select {
-    height: 38px;
-    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    height: 3.8rem;
+    padding: .6rem 1rem;
     background-color: $input-background;
     border: 1px solid $border-color;
     border-radius: $global-radius;
@@ -22,19 +22,14 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
         appearance: none;
     }
 }
 
 textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-    min-height: 65px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    min-height: 10rem;
+    padding: .6rem 1rem;
 }
 
 input {
@@ -46,8 +41,8 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
-        height: 38px;
-        padding: 6px 10px;
+        height: 3.8rem;
+        padding: .6rem 1rem;
         background-color: $input-background;
         border: 1px solid $border-color;
         border-radius: $global-radius;
@@ -88,7 +83,7 @@ input {
 // Radio and checkboxes
 .checkbox-inline,
 .radio-inline {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     label {
         display: inline;
     }

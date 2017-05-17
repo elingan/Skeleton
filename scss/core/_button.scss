@@ -8,14 +8,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    height: 38px;
-    padding: 0 30px;
+    height: 3.8rem;
+    padding: 0 3rem;
     color: $font-color;
     text-align: center;
     font-family: $font-family;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 38px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 3.8rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -25,17 +25,22 @@ input[type="button"] {
     border: 1px solid $border-color;
     cursor: pointer;
     box-sizing: border-box;
+    user-select: none;
 
     &:hover,
     &:focus {
         color: $font-color;
-        border-color: darken($border-color, 5%);
+        border-color: darken($border-color, $darken-hover-percent);
         outline: 0;
     }
 }
 
 // button variations
 @each $button, $colors in $buttons {
+
+    // start with a border x % of the main background
+    $default-border-color: darken(nth($colors, 1), 5%);
+
     .button.button-#{$button},
     button.button-#{$button},
     input[type="submit"].button-#{$button},
@@ -43,13 +48,14 @@ input[type="button"] {
     input[type="button"].button-#{$button} {
         color: nth($colors, 2);
         background-color: nth($colors, 1);
-        border-color: darken(nth($colors, 1), 5%);
+        border-color: $default-border-color;
 
         &:hover,
         &:focus {
             color: nth($colors, 2);
-            background-color: darken(nth($colors, 1), 5%);
-            border-color: darken(nth($colors, 1), 5%);
+            background-color: darken(nth($colors, 1), $darken-hover-percent);
+            border-color: darken($default-border-color, $darken-hover-percent);
+            outline: 0;
         }
     }
 }
