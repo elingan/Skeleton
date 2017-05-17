@@ -57,7 +57,7 @@
 }
 
 .muted {
-    color: lighten($font-color, 40%);
+    opacity: .3;
 }
  
 .nowrap { 
@@ -87,6 +87,14 @@
 
 .block {
     display: block;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-cell {
+    display: table-cell;
 }
 
 .scroll-x {
