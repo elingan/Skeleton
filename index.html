@@ -183,15 +183,15 @@
         <form>
             <div class="row">
                 <div class="col-12">
-                    <label class="inline">Name</label>
-                    <input type="text" placeholder="Bilbo Baggins">
                     <label class="inline">Sex</label>
-                    <select class="mr-1">
+                    <select>
                         <option value="">--------</option>
                         <option value="Option 1">Male</option>
                         <option value="Option 2">Female</option>
                     </select>
-                    <input class="button-primary" type="submit" value="Submit">
+                    <label class="inline">Name</label>
+                    <input type="text" placeholder="Bilbo Baggins">
+                    <input class="button-primary ml-h" type="submit" value="Submit">
                 </div>
             </div>
         </form>
@@ -389,12 +389,12 @@
     <div class="container">
         <h2 class="text-center">Mixins</h2>
         <div class="col-md-8 offset-md-2">
-            <code>@import box-shadow($top, $left, $blur, $color, $inset: false);</code><br>
+            <code>@import box-shadow($top, $left, $blur, $color, $inset);</code><br>
             <code>@import clearfix;</code><br>
-            <code>@import css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false);</code><br>
-            <code>@import pseudo($display: block, $pos: absolute, $content: '');</code><br>
+            <code>@import css-triangle($color, $direction, $size, $position, $round);</code><br>
+            <code>@import pseudo($display: block, $pos, $content);</code><br>
             <code>@import push--auto;</code><br>
-            <code>@import responsive-ratio($x, $y, $pseudo: false);</code><br>
+            <code>@import responsive-ratio($x, $y, $pseudo);</code><br>
             <code>@import truncate($truncation-boundary);</code><br>
         </div>
     </div>

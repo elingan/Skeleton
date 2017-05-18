@@ -70,7 +70,7 @@ $colors: (
 
 
 
-// defined colors used in core
+// defined colors
 $body-background:         map-get($colors, white);
 $font-color:              rgb(51, 51, 51);
 $link-color:              map-get($colors, primary);
@@ -85,10 +85,18 @@ $buttons: (
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, white)
 ) !default;
+$button-font-size: 1.1rem;
+$button-height: 3.8rem;
+$button-padding-x: 3rem;
 
 
 
-// Misc
+// forms
+$field-height: 3.8rem;
+
+
+
+// misc
 $global-radius:         .25rem !default;
 $table-cell-padding:    .85rem .85rem !default;
 $darken-hover-percent:  10%;
