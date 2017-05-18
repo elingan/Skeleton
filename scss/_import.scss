@@ -4,24 +4,18 @@
 /* utilities */
 @import "normalize.css/normalize";
 
-/* system wide mixins & functions */
-@import "bootstrap/scss/mixins/breakpoints";
-@import "utility/functions";
-@import "utility/mixins";
-
-/* main helpers */
-@import "utility/color";
-@import "utility/helpers";
-@import "utility/spacing";
-@import "utility/visibility";
-
-/* core styling */
-@import "core";
-
 /* bootstrap grid */
+@import "bootstrap/scss/mixins/breakpoints";
 @import "bootstrap/scss/mixins/grid";
 @import "bootstrap/scss/mixins/grid-framework";
 @import "bootstrap/scss/grid";
+
+/* system wide mixins & functions */
+@import "utility/functions";
+@import "utility/mixins";
+
+/* core styling */
+@import "core";
 
 /* core building blocks */
 @import "core/anchor";
@@ -34,6 +28,12 @@
 @import "core/spacing";
 @import "core/table";
 @import "core/typography";
+
+/* main helpers */
+@import "utility/color";
+@import "utility/helpers";
+@import "utility/spacing";
+@import "utility/visibility";
 
 /* site module */
 @import "module/layout";
