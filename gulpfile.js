@@ -19,14 +19,14 @@ gulp.task('scss', function() {
     }))
     .pipe($.postcss([prefixer({browsers: ['last 1 version']})]))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest(config.publicDir + '/css'));
+    .pipe(gulp.dest(config.publicDir));
 });
 
 gulp.task('min', function () {
-  return gulp.src(config.publicDir + '/css/skeleton.css')
+  return gulp.src(config.publicDir + '/skeleton.css')
     .pipe($.cssmin())
     .pipe($.rename({suffix: '.min'}))
-    .pipe(gulp.dest(config.publicDir + '/css'));
+    .pipe(gulp.dest(config.publicDir));
 });
 
 gulp.task('default', function(cb) {
