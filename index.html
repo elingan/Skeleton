@@ -174,7 +174,7 @@
             <label>Message</label>
             <textarea class="full-width" placeholder="Hi Dave …"></textarea>
             <label class="checkbox">
-                <input type="checkbox"><span class="checkbox-label">Send a copy to yourself</span>
+                <input type="checkbox">Send a copy to yourself
             </label>
             <input class="button-primary" type="submit" value="Submit">
         </form>
@@ -196,23 +196,27 @@
             </div>
         </form>
 
-        <p>Inline radio's and checkboxes</p>
-        <div class="checkbox-inline">
-            <label>
-                <input type="checkbox"><span class="checkbox-label">Checkbox 1</span>
-            </label>
-            <label>
-                <input type="checkbox"><span class="checkbox-label">Checkbox 2</span>
-            </label>
+        <p>Radio's and checkboxes</p>
+        
+        <div class="mb-2">
+            <label class="radio"><input type="radio" name="radio">Option 1</label>
+            <label class="radio"><input type="radio" name="radio">Option 2</label>
+            <label class="radio"><input type="radio" name="radio">Option 3</label>
         </div>
-        <div class="radio-inline">
-            <label>
-                <input type="radio" name="radio_0"><span class="radio-label">Radio 1</span>
-            </label>
-            <label>
-                <input type="radio" name="radio_0"><span class="radio-label">Radio 2</span>
-            </label>
+        <div class="mb-2">
+            <label class="checkbox"><input type="checkbox">Checkbox 1</label>
         </div>
+        <p>Just add class of <code>inline</code> to the label</p>
+        <div class="mb-2">
+            <label class="radio inline"><input type="radio" name="radio">Option 1</label>
+            <label class="radio inline"><input type="radio" name="radio">Option 2</label>
+            <label class="radio inline"><input type="radio" name="radio">Option 3</label>
+        </div>
+        <div class="mb-2">
+            <label class="checkbox inline"><input type="checkbox">Checkbox 1</label>
+            <label class="checkbox inline"><input type="checkbox">Checkbox 2</label>
+        </div>
+
     </div>
 </div>
 

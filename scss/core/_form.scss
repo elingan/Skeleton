@@ -73,26 +73,25 @@ fieldset {
     border-width: 0;
 }
 
+// radios and checckboxes
+.radio,
+.checkbox {
+    margin-bottom: 1.5rem;
+}
+
 input {
     &[type="checkbox"],
     &[type="radio"] {
-        display: inline;
+        display: inline-block;
+        margin-right: 1.5rem;
+        margin-bottom: 0;
     }
 }
 
-// Radio and checkboxes
-.checkbox-inline,
-.radio-inline {
-    margin-bottom: 1.5rem;
-    label {
-        display: inline;
-    }
-}
-
-label .checkbox-label,
-label .radio-label {
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1.5rem;
+label.checkbox,
+label.radio,
+.checkbox label,
+.radio label {
     font-weight: normal;
+    margin-right: 1.5rem;
 }
