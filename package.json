@@ -1,7 +1,7 @@
 {
-  "name": "skeleton",
-  "version": "2.2.3",
-  "description": "The (un)official Sass Version of Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "name": "scss-skeleton",
+  "version": "2.2.7",
+  "description": "The (un)official Sass Version of Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development. Including Bootstrap 4's Grid.",
   "repository": {
     "type": "git",
     "url": "https://github.com/bigmassa/skeleton"
@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/bigmassa/skeleton/issues"
   },
-  "homepage": "https://github.com/bigmassa/skeleton",
+  "homepage": "https://bigmassa.github.io/skeleton",
   "author": "Stuart George <stuart.bigmassa@gmail.com>",
   "keywords": [
     "skeleton",
