@@ -18,11 +18,11 @@ Git
 $ git clone https://github.com/bigmassa/skeleton.git
 ```
 
-# Usage
+## Usage
 The usage of this is generally for my own personal use.
 
 I usually clone it to an existing / new project.
-The folder `modules` is for custom css and any new files are imported into `_import.scss`.
+The folder `module` is for custom css and any new files are imported into `_import.scss`.
 
 Then finally run:
 ```
