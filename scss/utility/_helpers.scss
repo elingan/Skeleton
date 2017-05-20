@@ -37,8 +37,10 @@
 .list-style-none            { list-style: none; }
 
 /* typography */
+.bold                       { font-weight: bold; }
+.regular                    { font-weight: normal; }
 .italic                     { font-style: italic; }
-.muted                      { opacity: .3; }
+.muted                      { opacity: .4; }
 .nowrap                     { white-space: nowrap; }
 .uppercase                  { text-transform: uppercase; }
 .underline                  { text-decoration: underline; }
@@ -48,9 +50,10 @@
 .inline                     { display: inline; }
 .inline-block               { display: inline-block; }
 .block                      { display: block; }
+.flex                       { display: flex; }
+/* display prexix to avoid confusion with any table.table */
 .display-table              { display: table; }
 .display-table-cell         { display: table-cell; }
-.display-flex               { display: flex; }
 
 /* scroll */
 .scroll-x                   { overflow-x: auto; }

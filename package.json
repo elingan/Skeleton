@@ -1,6 +1,6 @@
 {
   "name": "scss-skeleton",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "The (un)official Sass Version of Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development. Including Bootstrap 4's Grid.",
   "repository": {
     "type": "git",
