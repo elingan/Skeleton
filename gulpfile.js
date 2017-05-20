@@ -26,7 +26,8 @@ gulp.task('min', function () {
   return gulp.src(config.publicDir + '/skeleton.css')
     .pipe($.cssmin())
     .pipe($.rename({suffix: '.min'}))
-    .pipe(gulp.dest(config.publicDir));
+    .pipe(gulp.dest(config.publicDir))
+    .pipe($.livereload());
 });
 
 gulp.task('default', function(cb) {
@@ -34,6 +35,7 @@ gulp.task('default', function(cb) {
 });
 
 gulp.task('watch', ['default'], function (){
+    $.livereload.listen();
     gulp.watch(
         [
             config.scssDir + '/*.scss',
