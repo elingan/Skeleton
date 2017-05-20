@@ -1,23 +1,30 @@
 # Skeleton
-This is a sass version of skeleton that includes the bootstrap 4 grid system.
+This is a sass version of skeleton that includes:
+* normalize.css
+* Bootstrap 4's grid system
+* Several handy css utilities for direct use in templates
+* Some popular mixins like css-triangle
+
+The original documentation found at [http://getskeleton.com/](http://getskeleton.com/).
 
 ## Installation
+Npm
 ```
 $ npm install scss-skeleton
 ```
 
-## Gulp
-From the root folder:
+Git
+```
+$ git clone https://github.com/bigmassa/skeleton.git
+```
+
+# Usage
+The usage of this is generally for my own personal use.
+
+I usually clone it to an existing / new project.
+The folder `modules` is for custom css and any new files are imported into `_import.scss`.
+
+Then finally run:
 ```
 $ gulp watch
 ```
-
-## Live Reload In Chrome
-To enable this you need to be viewing the html pages using an http server.
-
-Python has a simple http server from the current working directory (where the html files are) run:
-```
-$ python -m SimpleHTTPServer
-```
-
-Then the index.html in the root of this repo will be available from [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
