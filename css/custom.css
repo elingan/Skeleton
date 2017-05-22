@@ -1,30 +1,30 @@
-.heading-info {
-    font-size: 1.3rem;
+body {
+    padding-bottom: 5rem;
 }
 
-.panel:nth-child(odd) {
-    background: #E6E5E6;
+.page-title {
+    margin-top: 5rem;
 }
 
-.panel:first-child {
-    background: #5983a7;
+.page-header {
+    margin-top: 5rem;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: 2.5rem;
 }
 
-.color-block {
-    height: 8rem;
+.example-grid div[class*=col-] div { 
+    background: #fafafa; 
+    padding: .5rem; 
+    margin-bottom: 1rem; 
+} 
+
+.swatch {
+    padding-top: 5rem;
+    padding-bottom: 5rem; 
+    border: 1px solid rgb(230, 230, 230);
+    margin-bottom: 3rem;
 }
 
-.example-grid div[class*=col-] div {
-  background: #fafafa;
-  padding: .5rem;
-  margin-bottom: 1rem;
-}
-
-.center-outer {
-    display: flex;
-    justify-content: center;
-}
-
-.center-inner {
-    align-self: center;
+.swatch h4 {
+    margin: 0;
 }

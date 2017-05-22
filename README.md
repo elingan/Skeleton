@@ -28,3 +28,6 @@ Then finally run:
 ```
 $ gulp watch
 ```
+
+## Styleguide
+Included is `styleguide.html` which contains most of the common html elements
