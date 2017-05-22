@@ -6,6 +6,7 @@ code {
     margin: 0 .2rem;
     font-size: 90%;
     white-space: nowrap;
+    background: $code-background;
     border: 1px solid $border-color;
     border-radius: $global-radius;
 }

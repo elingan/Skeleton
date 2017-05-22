@@ -13,7 +13,7 @@ body {
 }
 
 .example-grid div[class*=col-] div { 
-    background: #fafafa; 
+    background: rgb(240, 240, 240); 
     padding: .5rem; 
     margin-bottom: 1rem; 
 } 

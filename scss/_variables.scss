@@ -64,7 +64,7 @@ $colors: (
         white:          white,
         black:          black,
         primary:          rgb(51, 195, 240),
-        secondary:        rgb(250, 250, 250),
+        secondary:        rgb(240, 240, 240),
 ) !default;
 
 
@@ -75,6 +75,7 @@ $font-color:              rgb(51, 51, 51);
 $link-color:              map-get($colors, primary);
 $border-color:            rgb(230, 230, 230);
 $input-background:        map-get($colors, white);
+$code-background:         rgb(240, 240, 240);
 
 
 
