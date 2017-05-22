@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // The default font family.
-$font-family: "Open Sans", sans-serif !default;
+$font-family: "Raleway", sans-serif !default;
 
 
 
@@ -64,8 +64,7 @@ $colors: (
         white:          white,
         black:          black,
         primary:          rgb(51, 195, 240),
-        secondary:        rgb(183, 177, 177),
-        alabaster:        rgb(250, 250, 250),
+        secondary:        rgb(250, 250, 250),
 ) !default;
 
 
@@ -83,7 +82,7 @@ $input-background:        map-get($colors, white);
 // button classes created: .button-primary, .button-secondary
 $buttons: (
         primary:        map-get($colors, primary)      map-get($colors, white),
-        secondary:      map-get($colors, secondary)    map-get($colors, white)
+        secondary:      map-get($colors, secondary)    map-get($colors, black)
 ) !default;
 $button-font-size: 1.1rem;
 $button-height: 3.8rem;
