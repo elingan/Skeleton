@@ -22,54 +22,72 @@
         <div class="page-header">
             <h2>Bootstrap 4 Grid</h2>
         </div>
-        <div class="row example-grid">
-            <div class="col-lg-1"><div>One</div></div>
-            <div class="col-lg-11"><div>Eleven</div></div>
+        <div class="example-grid">
+            <div class="row">
+                <div class="col-lg-1"><div>One</div></div>
+                <div class="col-lg-11"><div>Eleven</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><div>Two</div></div>
+                <div class="col-lg-10"><div>Ten</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"><div>Three</div></div>
+                <div class="col-lg-9"><div>Nine</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><div>Four</div></div>
+                <div class="col-lg-8"><div>Eight</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5"><div>Five</div></div>
+                <div class="col-lg-7"><div>Seven</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6"><div>Six</div></div>
+                <div class="col-lg-6"><div>Six</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7"><div>Seven</div></div>
+                <div class="col-lg-5"><div>Five</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8"><div>Eight</div></div>
+                <div class="col-lg-4"><div>Four</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9"><div>Eight</div></div>
+                <div class="col-lg-3"><div>Three</div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10"><div>Ten</div></div>
+                <div class="col-lg-2"><div>Two</div></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-11"><div>Eleven</div></div>
+                <div class="col-lg-1"><div>One</div></div>
+            </div>
+            
+            <p>Offsetting columns</p>
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6"><div>.offset-lg-3 .col-lg-6</div></div>
+            </div>
+            <div class="row mb-3">
+                <div class="offset-lg-6 col-lg-6"><div>.offset-lg-6 .col-lg-6</div></div>
+            </div>
+
+            <p>Not specifying the size will grow to the available width</p>
+            <div class="row">
+                <div class="col-lg-2"><div>.col-lg-2</div></div>
+                <div class="col-lg"><div>.col-lg</div></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg"><div>.col-lg</div></div>
+                <div class="col-lg-2"><div>.col-lg-2</div></div>
+            </div>
         </div>
-        <div class="row example-grid">
-            <div class="col-lg-2"><div>Two</div></div>
-            <div class="col-lg-10"><div>Ten</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-3"><div>Three</div></div>
-            <div class="col-lg-9"><div>Nine</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-4"><div>Four</div></div>
-            <div class="col-lg-8"><div>Eight</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-5"><div>Five</div></div>
-            <div class="col-lg-7"><div>Seven</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-6"><div>Six</div></div>
-            <div class="col-lg-6"><div>Six</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-7"><div>Seven</div></div>
-            <div class="col-lg-5"><div>Five</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-8"><div>Eight</div></div>
-            <div class="col-lg-4"><div>Four</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-9"><div>Eight</div></div>
-            <div class="col-lg-3"><div>Three</div></div>
-        </div>
-        <div class="row example-grid">
-            <div class="col-lg-10"><div>Ten</div></div>
-            <div class="col-lg-2"><div>Two</div></div>
-        </div>
-        <div class="row example-grid mb-3">
-            <div class="col-lg-11"><div>Eleven</div></div>
-            <div class="col-lg-1"><div>One</div></div>
-        </div>
-        <p>Tips:<br>
-            add .no-gutters to row to remove gutters<br>
-            add .offset-{breakpoint}-{x} to column to add margin by x number of columns
-        </p>
+
+        <p>Tip: add <code>.no-gutters</code> to row to remove gutters</p>
         <p>See their <a href="https://v4-alpha.getbootstrap.com/layout/grid/">documentation</a> for further help</p>
 
         <div class="page-header">
@@ -271,6 +289,106 @@
         </div>
         <pre><code>var i = 0;</code></pre>
         <p>Some inline <code>code()</code> block.</p>
+    
+        <div class="page-title">
+            <h1>Helpers, Mixins and Functions</h1>
+            <p>Below are some common helpers, mixins and functions you may find useful.</p>
+        </div>
+
+        <div class="page-header">
+            <h2>Helpers</h2>
+        </div>
+        
+        <p class="my-1">Clearfix</p>
+        <code>.clearfix {...}</code><br>
+
+        <p class="my-1">Width and height</p>
+        <code>.full-height {...}</code><br>
+        <code>.full-visual-height {...}</code><br>
+        <code>.max-full-width {...}</code><br>
+        <code>.full-width {...}</code><br>
+        <code>.half-width {...}</code><br>
+        <code>.quater-width {...}</code><br>
+
+        <p class="my-1">Alignment</p>
+        <code>.pull-left {...}</code><br>
+        <code>.pull-right {...}</code><br>
+        <code>.push-auto {...}</code><br>
+
+        <code>.text-left {...}</code><br>
+        <code>.text-center {...}</code><br>
+        <code>.text-right {...}</code><br>
+        <code>.text-just {...}</code><br>
+
+        <code>.align-top {...}</code><br>
+        <code>.align-bottom {...}</code><br>
+        <code>.align-middle {...}</code><br>
+        <code>.align-baseline {...}</code><br>
+        <code>.align-self-center {...}</code><br>
+
+        <p class="my-1">Positions</p>
+        <code>.fixed {...}</code><br>
+        <code>.relative {...}</code><br>
+        <code>.absolute {...}</code><br>
+
+        <p class="my-1">Lists</p>
+        <code>.list-style-none {...}</code><br>
+
+        <p class="my-1">Typography</p>
+        <code>.italic {...}</code><br>
+        <code>.muted {...}</code><br>
+        <code>.nowrap {...}</code><br>
+        <code>.uppercase {...}</code><br>
+        <code>.underline {...}</code><br>
+
+        <p class="my-1">Display</p>
+        <code>.hidden {...}</code><br>
+        <code>.inline {...}</code><br>
+        <code>.inline-block {...}</code><br>
+        <code>.block {...}</code><br>
+        <code>.flex {...}</code><br>
+        <code>.display-table {...}</code><br>
+        <code>.display-table-cell {...}</code>
+
+        <p class="my-1">Scroll</p>
+        <code>.scroll-x {...}</code>
+
+        <div class="page-header">
+            <h2>Padding and Margin</h2>
+        </div>
+        <p>Padding and margins are defined in <code>scss/_variables.scss</code>. Padding is prefixed with <code>p</code> and margin <code>m</code></p>
+        <p>Example padding classes at 1rem:</p>
+        <code>.p-1 {...}</code><br>
+        <code>.px-1 {...}</code><br>
+        <code>.py-1 {...}</code><br>
+        <code>.pt-1 {...}</code><br>
+        <code>.pr-1 {...}</code><br>
+        <code>.pb-1 {...}</code><br>
+        <code>.pl-1 {...}</code><br>
+        <p class="mt-2h">Example margin classes at 1.5rem:</p>
+        <code>.m-1h {...}</code><br>
+        <code>.mx-1h {...}</code><br>
+        <code>.my-1h {...}</code><br>
+        <code>.mt-1h {...}</code><br>
+        <code>.mr-1h {...}</code><br>
+        <code>.mb-1h {...}</code><br>
+        <code>.ml-1h {...}</code><br>
+
+        <div class="page-header">
+            <h2>Mixins</h2>
+        </div>
+        <code>@import box-shadow($top, $left, $blur, $color, $inset);</code><br> 
+        <code>@import clearfix;</code><br> 
+        <code>@import css-triangle($color, $direction, $size, $position, $round);</code><br> 
+        <code>@import pseudo($display: block, $pos, $content);</code><br> 
+        <code>@import push--auto;</code><br> 
+        <code>@import responsive-ratio($x, $y, $pseudo);</code><br> 
+        <code>@import truncate($truncation-boundary);</code><br>
+        
+        <div class="page-header">
+            <h2>Functions</h2>
+        </div>
+        <code>color($name);</code><br>
         
     </div>
 

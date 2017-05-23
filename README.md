@@ -18,16 +18,23 @@ Git
 $ git clone https://github.com/bigmassa/skeleton.git
 ```
 
-## Usage
-The usage of this is generally for my own personal use.
+## Or
+A starter project complete with gulpfile can be downloaded [here](https://github.com/bigmassa/skeleton_starter/archive/master.zip).
 
-I usually clone it to an existing / new project.
-The folder `module` is for custom css and any new files are imported into `_import.scss`.
+Just cd to the root
 
-Then finally run:
+Do an: 
+```
+npm install
+```
+
+Then:
 ```
 $ gulp watch
 ```
 
+Job done..
+
 ## Styleguide
 Included is `styleguide.html` which contains most of the common html elements
+which can also be found online at [https://bigmassa.github.io/skeleton/](https://bigmassa.github.io/skeleton/).
