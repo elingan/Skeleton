@@ -73,24 +73,29 @@ fieldset {
     border-width: 0;
 }
 
-// radios and checckboxes
-.radio,
-.checkbox {
-    margin-bottom: 1.5rem;
-}
-
+// try so make sensible defaults for radios and checkboxes
 input {
     &[type="checkbox"],
     &[type="radio"] {
-        display: inline-block;
+        display: inline;
+        // margin is only sensible if text is after
+        // TODO: find better solution or remove
         margin-right: 1.5rem;
-        margin-bottom: 0;
     }
 }
 
-label.checkbox,
-label.radio,
-.checkbox label,
-.radio label {
-    font-weight: normal;
+// either the label can carry the class
+label {
+    &.checkbox,
+    &.radio {
+        font-weight: normal;
+    }
+}
+
+// or label can be a sibling
+.radio,
+.checkbox {
+    label {
+        font-weight: normal;
+    }
 }
