@@ -123,3 +123,11 @@ $spacers: (
         '8': (x: ($spacer-x * 8), y: ($spacer-y * 8)),
         '10': (x: ($spacer-x * 10), y: ($spacer-y * 10)),
 ) !default;
+
+
+
+// defined z-indexes
+// and get with z('default')
+$z-layers: (
+        'default':              1
+);
