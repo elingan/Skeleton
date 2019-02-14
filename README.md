@@ -38,3 +38,12 @@ Job done..
 ## Styleguide
 Included is `styleguide.html` which contains most of the common html elements
 which can also be found online at [https://bigmassa.github.io/skeleton/](https://bigmassa.github.io/skeleton/).
+
+## Changes
+
+* Rename `styleguide.html` -> `index.html`
+* Rename variable `$grid-gutter-width-base` -> `$grid-gutter-width`
+* Add task `npm run serve`
+* Add `scripts` Gulp task
+* Gulpfile.js refactorized
+* Update dependencies

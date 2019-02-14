@@ -1,0 +1,1 @@
+console.log('Skeleton theme has been loaded!');
