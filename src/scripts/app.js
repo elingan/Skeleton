@@ -1,1 +1,1 @@
-console.log('Skeleton theme has been loaded!');
+console.log('Skeleton customized theme has been loaded!');
