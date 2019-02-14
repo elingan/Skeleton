@@ -5,7 +5,7 @@
 * Add task `npm run serve`
 * Add `scripts` Gulp task
 * Gulpfile.js refactorized
-* Update dependencies
+* Dependencies updated
 
 
 # Skeleton
